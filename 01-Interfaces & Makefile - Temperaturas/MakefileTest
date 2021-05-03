@@ -1,0 +1,16 @@
+# Makes and ConversionTest.exe
+# NMG
+# 2021
+# TP 01 - Interfaces & Makefile - Temperaturas
+SOURCE = Conversion.c Conversion.h ConversionTest.c
+BIN = ConversionTest.exe
+OBJ = ConversionTest.o
+CC = gcc
+CFLAGS = -std=c99
+RM = rm -f
+$(BIN): $(OBJ)
+	$(CC) $(OBJ) -o $(BIN) $(CFLAGS)
+
+.PHONY: clean
+clean:
+	$(RM) $(OBJ) $(BIN)
