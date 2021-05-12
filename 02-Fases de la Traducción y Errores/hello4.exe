@@ -1,4 +1,0 @@
-Mensaje recibido al tratar de vincular hello4.o:
-
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: hello4.o:hello4.c:(.text+0x1e): undefined reference to `prontf'
-collect2.exe: error: ld returned 1 exit status
