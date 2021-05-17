@@ -8,7 +8,8 @@
 # 1. Preprocesador:
 	(gcc -E hello.c > hello.i)
 
-	En hello2.i podemos observar que el preprocesador trae el contrato de las funciones que están declaradas dentro de la biblioteca standard de entrada/salida (stdio.h).
+	En hello2.i podemos observar que el preprocesador trae el contrato de las funciones que están
+	declaradas dentro de la biblioteca standard de entrada/salida (stdio.h).
 	Luego, copia el código fuente escrito por nosotros reemplazando los comentarios (en este caso 
 	el /medio/ dentro de la definición de main) por un espacio.
 
@@ -20,7 +21,8 @@
 	-los puntos suspensivos luego de la coma definen que podemos tener tantos argumentos adicionales 
 	como queramos
 
-	No se observan diferencias entre hello3.c y hello3.i debido a que el código fuente no poseía comentarios ni bibliotecas a ser incluidas para el correcto funcionamiento del programa.
+	No se observan diferencias entre hello3.c y hello3.i debido a que el código fuente no poseía
+	comentarios ni bibliotecas a ser incluidas para el correcto funcionamiento del programa.
 	
 
 
@@ -61,7 +63,8 @@
 	warning: incompatible implicit declaration of built-in function 'printf' hello7.c:1:1: note: include
 	'<stdio.h>' or provide a declaration of 'printf' +++ |+#include <stdio.h> 1 | int main(void){
 
-	De todos modos el programa funciona correctamente ya que el compilador reconoce la función printf aunque esta no esté declarada ni estemos incluyendo el contrato de la función.
+	De todos modos el programa funciona correctamente ya que el compilador reconoce la función printf
+	aunque esta no esté declarada ni estemos incluyendo el contrato de la función.
 
 
 
